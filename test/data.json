@@ -1,0 +1,509 @@
+[
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$0",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$1",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$1",
+        "target": "Blob$0",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$0",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$1",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$2",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$1",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$2",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$2",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$0",
+        "target": "Blob$2",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$1",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$2",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$2",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$0",
+        "target": "Blob$2",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$2",
+        "target": "Blob$1",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$1",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$2",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$2",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$0",
+        "target": "Blob$2",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$1",
+        "target": "Blob$2",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$1",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$2",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$2",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$2",
+        "target": "Blob$1",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$1",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$2",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$2",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$3",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$2",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$3",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$2",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$3",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$0",
+        "target": "Blob$3",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$1",
+        "target": "Blob$2",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$2",
+        "target": "Blob$3",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$2",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$3",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Meal$0",
+        "type": [
+          "this/Meal",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$0",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$1",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$2",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      },
+      {
+        "id": "Blob$3",
+        "type": [
+          "this/Blob",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Blob$0",
+        "target": "Blob$3",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$1",
+        "target": "Blob$3",
+        "field": "parentOf"
+      },
+      {
+        "source": "Blob$2",
+        "target": "Meal$0",
+        "field": "making"
+      },
+      {
+        "source": "Blob$3",
+        "target": "Meal$0",
+        "field": "making"
+      }
+    ]
+  }
+]

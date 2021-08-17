@@ -1,0 +1,50 @@
+<alloy builddate="2018-04-08T17:20:06.754Z">
+
+<instance bitwidth="4" maxseq="4" command="Run showBlobsCooking for 4 Blob, 1 Meal" filename="/Users/atdyer/workspace/blobby-isomorph.als">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/Meal" ID="4" parentID="2" one="yes">
+   <atom label="Meal$0"/>
+</sig>
+
+<sig label="this/Blob" ID="5" parentID="2">
+   <atom label="Blob$0"/>
+   <atom label="Blob$1"/>
+   <atom label="Blob$2"/>
+</sig>
+
+<field label="parentOf" ID="6" parentID="5">
+   <tuple> <atom label="Blob$0"/> <atom label="Blob$2"/> </tuple>
+   <tuple> <atom label="Blob$2"/> <atom label="Blob$1"/> </tuple>
+   <types> <type ID="5"/> <type ID="5"/> </types>
+</field>
+
+<field label="making" ID="7" parentID="5">
+   <tuple> <atom label="Blob$1"/> <atom label="Meal$0"/> </tuple>
+   <tuple> <atom label="Blob$2"/> <atom label="Meal$0"/> </tuple>
+   <types> <type ID="5"/> <type ID="4"/> </types>
+</field>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<skolem label="$this/validMeal" ID="m0">
+   <tuple> <atom label="Meal$0"/> </tuple>
+   <types> <type ID="4"/> </types>
+</skolem>
+
+</instance>
+
+<source filename="/Users/atdyer/workspace/blobby-isomorph.als" content="&#x000a;-- Food -&gt; Meal&#x000a;one sig Meal {}&#x000a;&#x000a;sig Blob {&#x000a;  -- singingTo -&gt; parentOf&#x000a;  parentOf: set Blob,&#x000a;&#x000a;  -- eating -&gt; making&#x000a;  making: set Meal&#x000a;}&#x000a;&#x000a;pred prerequisites {&#x000a;  -- two blobs cannot create each other&#x000a;  all c: Blob | c not in c.^parentOf&#x000a;  -- a Blob can only have on child&#x000a;  all c: Blob | lone c.parentOf&#x000a;}&#x000a;&#x000a;fun validMeal: Meal {{&#x000a;  p: Meal {&#x000a;      -- it takes two Blobs to make a meal&#x000a;      #making = 2&#x000a;      -- the oldest Blob and one of its descendants are responsible for cooking&#x000a;      all c: p[making] | c.parentOf in p[making]&#x000a;  }&#x000a;}}&#x000a;&#x000a;pred showBlobsCooking {&#x000a;  prerequisites and some validMeal&#x000a;}&#x000a;&#x000a;run showBlobsCooking for 4 Blob, 1 Meal&#x000a;"/>
+
+<source filename="/$alloy4$/models/util/integer.als" content="module util/integer&#x000a;&#x000a;/*&#x000a; * A collection of utility functions for using Integers in Alloy.&#x000a; * Note that integer overflows are silently truncated to the current bitwidth&#x000a; * using the 2&apos;s complement arithmetic, unless the &quot;forbid overfows&quot; option is&#x000a; * turned on, in which case only models that don&apos;t have any overflows are &#x000a; * analyzed. &#x000a; */&#x000a;&#x000a;fun add  [n1, n2: Int] : Int { this/plus[n1, n2] }&#x000a;fun plus [n1, n2: Int] : Int { n1 fun/add n2 }&#x000a;&#x000a;fun sub   [n1, n2: Int] : Int { this/minus[n1, n2] }&#x000a;fun minus [n1, n2: Int] : Int { n1 fun/sub n2 }&#x000a;&#x000a;fun mul [n1, n2: Int] : Int { n1 fun/mul n2 }&#x000a;&#x000a;/**&#x000a; * Performs the division with &quot;round to zero&quot; semantics, except the following 3 cases&#x000a; * 1) if a is 0, then it returns 0&#x000a; * 2) else if b is 0, then it returns 1 if a is negative and -1 if a is positive&#x000a; * 3) else if a is the smallest negative integer, and b is -1, then it returns a&#x000a; */&#x000a;fun div [n1, n2: Int] : Int { n1 fun/div n2 }&#x000a;&#x000a;/** answer is defined to be the unique integer that satisfies &quot;a = ((a/b)*b) + remainder&quot; */&#x000a;fun rem [n1, n2: Int] : Int { n1 fun/rem n2 }&#x000a;&#x000a;/** negate */&#x000a;fun negate [n: Int] : Int { 0 fun/sub n }&#x000a;&#x000a;/** equal to */&#x000a;pred eq [n1, n2: Int] { int[n1] = int[n2] }&#x000a;&#x000a;/** greater than */&#x000a;pred gt [n1, n2: Int] { n1 &gt; n2 }&#x000a;&#x000a;/** less then */&#x000a;pred lt [n1, n2: Int] { n1 &lt; n2 }&#x000a;&#x000a;/** greater than or equal */&#x000a;pred gte [n1, n2: Int] { n1 &gt;= n2 }&#x000a;&#x000a;/** less than or equal */&#x000a;pred lte [n1, n2: Int] { n1 &lt;= n2 }&#x000a;&#x000a;/** integer is zero */&#x000a;pred zero [n: Int] { n = 0 }&#x000a;&#x000a;/** positive */&#x000a;pred pos  [n: Int] { n &gt; 0 }&#x000a;&#x000a;/** negative */&#x000a;pred neg  [n: Int] { n &lt; 0 }&#x000a;&#x000a;/** non-positive */&#x000a;pred nonpos [n: Int] { n &lt;= 0 }&#x000a;&#x000a;/** non-negative */&#x000a;pred nonneg [n: Int] { n &gt;= 0 }&#x000a;&#x000a;/** signum (aka sign or sgn) */&#x000a;fun signum [n: Int] : Int { n&lt;0 =&gt; (0 fun/sub 1) else (n&gt;0 =&gt; 1 else 0) }&#x000a;&#x000a;/**&#x000a; * returns the ith element (zero-based) from the set s&#x000a; * in the ordering of &apos;next&apos;, which is a linear ordering&#x000a; * relation like that provided by util/ordering&#x000a; */&#x000a;fun int2elem[i: Int, next: univ-&gt;univ, s: set univ] : lone s {&#x000a;  {e: s | #^next.e = int i }&#x000a;}&#x000a;&#x000a;/**&#x000a; * returns the index of the element (zero-based) in the&#x000a; * ordering of next, which is a linear ordering relation&#x000a; * like that provided by util/ordering&#x000a; */&#x000a;fun elem2int[e: univ, next: univ-&gt;univ] : lone Int {&#x000a;  Int[#^next.e]&#x000a;}&#x000a;&#x000a;/** returns the largest integer in the current bitwidth */&#x000a;fun max:one Int { fun/max }&#x000a;&#x000a;/** returns the smallest integer in the current bitwidth */&#x000a;fun min:one Int { fun/min }&#x000a;&#x000a;/** maps each integer (except max) to the integer after it */&#x000a;fun next:Int-&gt;Int { fun/next }&#x000a;&#x000a;/** maps each integer (except min) to the integer before it */&#x000a;fun prev:Int-&gt;Int { ~next }&#x000a;&#x000a;/** given a set of integers, return the largest element */&#x000a;fun max [es: set Int]: lone Int { es - es.^prev }&#x000a;&#x000a;/** given a set of integers, return the smallest element */&#x000a;fun min [es: set Int]: lone Int { es - es.^next }&#x000a;&#x000a;/** given an integer, return all integers prior to it */&#x000a;fun prevs [e: Int]: set Int { e.^prev }&#x000a;&#x000a;/** given an integer, return all integers following it */&#x000a;fun nexts [e: Int]: set Int { e.^next }&#x000a;&#x000a;/** returns the larger of the two integers */&#x000a;fun larger [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; b else a) }&#x000a;&#x000a;/** returns the smaller of the two integers */&#x000a;fun smaller [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; a else b) }&#x000a;"/>
+
+</alloy>
