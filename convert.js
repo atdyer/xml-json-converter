@@ -49,22 +49,20 @@ function alloyToGraph (alloy) {
         const parent = sig.$.parentID;
 
         if (id && label) {
-
-            types[id] = label;
-            if (parent) parents[id] = parent;
-
-            const atoms = sig.atom ? sig.atom.map(atom => {
-                return {
-                    id: atom.$.label,
-                    type: [id]
-                };
-            }) : [];
-            nodes.push(...atoms);
-
+            const isSubset = sig.type !== undefined;
+            if (!isSubset) {
+                types[id] = label;
+                if (parent) parents[id] = parent;
+                const atoms = sig.atom ? sig.atom.map(atom => {
+                    return {
+                        id: atom.$.label,
+                        type: [id]
+                    };
+                }) : [];
+                nodes.push(...atoms);
+            }
         } else {
-
-            log(`ERROR: Signature has no ID or label`);
-
+            console.error(`ERROR: Signature has no ID or label`);
         }
     });
 

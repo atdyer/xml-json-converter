@@ -1,0 +1,86 @@
+<alloy builddate="2018-04-08T17:20:06.754Z">
+
+<instance bitwidth="4" maxseq="6" command="Run show for 6" filename="">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/Ship" ID="4" parentID="2" one="yes">
+   <atom label="Ship$0"/>
+</sig>
+
+<field label="location" ID="5" parentID="4">
+   <tuple> <atom label="Ship$0"/> <atom label="NeutralStation$0"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<field label="transponders" ID="7" parentID="4">
+   <tuple> <atom label="Ship$0"/> <atom label="GreenTransponder$0"/> </tuple>
+   <tuple> <atom label="Ship$0"/> <atom label="BlueTransponder$0"/> </tuple>
+   <types> <type ID="4"/> <type ID="8"/> </types>
+</field>
+
+<sig label="this/GreenTransponder" ID="9" parentID="8" one="yes">
+   <atom label="GreenTransponder$0"/>
+</sig>
+
+<sig label="this/BlueTransponder" ID="10" parentID="8" one="yes">
+   <atom label="BlueTransponder$0"/>
+</sig>
+
+<sig label="this/Transponder" ID="8" parentID="2" abstract="yes">
+</sig>
+
+<sig label="this/GreenStation" ID="11" parentID="6">
+   <atom label="GreenStation$0"/>
+   <atom label="GreenStation$1"/>
+   <atom label="GreenStation$2"/>
+</sig>
+
+<sig label="this/BlueStation" ID="12" parentID="6">
+</sig>
+
+<sig label="this/NeutralStation" ID="13" parentID="6">
+   <atom label="NeutralStation$0"/>
+   <atom label="NeutralStation$1"/>
+</sig>
+
+<sig label="this/Station" ID="6" parentID="2" abstract="yes">
+</sig>
+
+<field label="nextOrbit" ID="14" parentID="6">
+   <tuple> <atom label="NeutralStation$0"/> <atom label="GreenStation$1"/> </tuple>
+   <tuple> <atom label="GreenStation$0"/> <atom label="GreenStation$2"/> </tuple>
+   <tuple> <atom label="GreenStation$1"/> <atom label="GreenStation$0"/> </tuple>
+   <tuple> <atom label="GreenStation$2"/> <atom label="NeutralStation$1"/> </tuple>
+   <types> <type ID="6"/> <type ID="6"/> </types>
+</field>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<sig label="this/Outer" ID="15" one="yes">
+   <atom label="NeutralStation$0"/>
+   <type ID="6"/>
+</sig>
+
+<sig label="this/Inner" ID="16" one="yes">
+   <atom label="NeutralStation$1"/>
+   <type ID="6"/>
+</sig>
+
+<skolem label="$show_flights" ID="17">
+   <tuple> <atom label="NeutralStation$0"/> <atom label="GreenStation$2"/> </tuple>
+   <tuple> <atom label="GreenStation$2"/> <atom label="NeutralStation$1"/> </tuple>
+   <types> <type ID="6"/> <type ID="6"/> </types>
+</skolem>
+
+</instance>
+
+</alloy>

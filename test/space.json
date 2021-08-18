@@ -1,0 +1,998 @@
+[
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$1",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$2",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$3",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "NeutralStation$2",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "Ship$0",
+        "target": "BlueTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "NeutralStation$3",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$1",
+        "target": "NeutralStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$2",
+        "target": "NeutralStation$1",
+        "field": "nextOrbit"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$1",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$2",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$3",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "NeutralStation$2",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "Ship$0",
+        "target": "BlueTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "NeutralStation$3",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$1",
+        "target": "NeutralStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$2",
+        "target": "NeutralStation$1",
+        "field": "nextOrbit"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$1",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$2",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$3",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "NeutralStation$2",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "Ship$0",
+        "target": "BlueTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "NeutralStation$1",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$1",
+        "target": "NeutralStation$3",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$2",
+        "target": "NeutralStation$0",
+        "field": "nextOrbit"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenStation$0",
+        "type": [
+          "this/GreenStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueStation$0",
+        "type": [
+          "this/BlueStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$1",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "GreenStation$0",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "Ship$0",
+        "target": "BlueTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "BlueStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "NeutralStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "BlueStation$0",
+        "target": "NeutralStation$1",
+        "field": "nextOrbit"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenStation$0",
+        "type": [
+          "this/GreenStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueStation$0",
+        "type": [
+          "this/BlueStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueStation$1",
+        "type": [
+          "this/BlueStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueStation$2",
+        "type": [
+          "this/BlueStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueStation$3",
+        "type": [
+          "this/BlueStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "GreenStation$0",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "Ship$0",
+        "target": "BlueTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "BlueStation$3",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "BlueStation$0",
+        "target": "BlueStation$2",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "BlueStation$1",
+        "target": "NeutralStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "BlueStation$2",
+        "target": "BlueStation$1",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "BlueStation$3",
+        "target": "BlueStation$0",
+        "field": "nextOrbit"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenStation$0",
+        "type": [
+          "this/GreenStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueStation$0",
+        "type": [
+          "this/BlueStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$1",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "GreenStation$0",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "BlueStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "NeutralStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "BlueStation$0",
+        "target": "NeutralStation$1",
+        "field": "nextOrbit"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$1",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$2",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$3",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$4",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$5",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "NeutralStation$4",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "Ship$0",
+        "target": "BlueTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "NeutralStation$5",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$1",
+        "target": "NeutralStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$2",
+        "target": "NeutralStation$1",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$3",
+        "target": "NeutralStation$2",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$4",
+        "target": "NeutralStation$3",
+        "field": "nextOrbit"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenStation$0",
+        "type": [
+          "this/GreenStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueStation$0",
+        "type": [
+          "this/BlueStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueStation$1",
+        "type": [
+          "this/BlueStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$1",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "NeutralStation$0",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "Ship$0",
+        "target": "BlueTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "BlueStation$1",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "BlueStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "BlueStation$0",
+        "target": "NeutralStation$1",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "BlueStation$1",
+        "target": "GreenStation$0",
+        "field": "nextOrbit"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenStation$0",
+        "type": [
+          "this/GreenStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenStation$1",
+        "type": [
+          "this/GreenStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueStation$0",
+        "type": [
+          "this/BlueStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$1",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "NeutralStation$0",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "Ship$0",
+        "target": "BlueTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "BlueStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "GreenStation$1",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$1",
+        "target": "NeutralStation$1",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "BlueStation$0",
+        "target": "GreenStation$0",
+        "field": "nextOrbit"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "Ship$0",
+        "type": [
+          "this/Ship",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenTransponder$0",
+        "type": [
+          "this/GreenTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "BlueTransponder$0",
+        "type": [
+          "this/BlueTransponder",
+          "this/Transponder",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenStation$0",
+        "type": [
+          "this/GreenStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenStation$1",
+        "type": [
+          "this/GreenStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "GreenStation$2",
+        "type": [
+          "this/GreenStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$0",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      },
+      {
+        "id": "NeutralStation$1",
+        "type": [
+          "this/NeutralStation",
+          "this/Station",
+          "univ"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ship$0",
+        "target": "NeutralStation$0",
+        "field": "location"
+      },
+      {
+        "source": "Ship$0",
+        "target": "GreenTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "Ship$0",
+        "target": "BlueTransponder$0",
+        "field": "transponders"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "GreenStation$1",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "GreenStation$2",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$1",
+        "target": "GreenStation$0",
+        "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$2",
+        "target": "NeutralStation$1",
+        "field": "nextOrbit"
+      }
+    ]
+  }
+]
