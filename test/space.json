@@ -87,6 +87,16 @@
         "source": "NeutralStation$2",
         "target": "NeutralStation$1",
         "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$1",
+        "target": "NeutralStation$3",
+        "field": "$show_flights"
+      },
+      {
+        "source": "NeutralStation$2",
+        "target": "NeutralStation$1",
+        "field": "$show_flights"
       }
     ]
   },
@@ -178,6 +188,11 @@
         "source": "NeutralStation$2",
         "target": "NeutralStation$1",
         "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$2",
+        "target": "NeutralStation$3",
+        "field": "$show_flights"
       }
     ]
   },
@@ -269,6 +284,16 @@
         "source": "NeutralStation$2",
         "target": "NeutralStation$0",
         "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$1",
+        "target": "NeutralStation$3",
+        "field": "$show_flights"
+      },
+      {
+        "source": "NeutralStation$2",
+        "target": "NeutralStation$1",
+        "field": "$show_flights"
       }
     ]
   },
@@ -360,6 +385,21 @@
         "source": "BlueStation$0",
         "target": "NeutralStation$1",
         "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "BlueStation$0",
+        "field": "$show_flights"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "NeutralStation$0",
+        "field": "$show_flights"
+      },
+      {
+        "source": "BlueStation$0",
+        "target": "NeutralStation$1",
+        "field": "$show_flights"
       }
     ]
   },
@@ -477,6 +517,21 @@
         "source": "BlueStation$3",
         "target": "BlueStation$0",
         "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "BlueStation$3",
+        "field": "$show_flights"
+      },
+      {
+        "source": "BlueStation$2",
+        "target": "NeutralStation$0",
+        "field": "$show_flights"
+      },
+      {
+        "source": "BlueStation$3",
+        "target": "BlueStation$2",
+        "field": "$show_flights"
       }
     ]
   },
@@ -563,6 +618,11 @@
         "source": "BlueStation$0",
         "target": "NeutralStation$1",
         "field": "nextOrbit"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "NeutralStation$1",
+        "field": "$show_flights"
       }
     ]
   },
@@ -680,6 +740,21 @@
         "source": "NeutralStation$4",
         "target": "NeutralStation$3",
         "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$2",
+        "target": "NeutralStation$5",
+        "field": "$show_flights"
+      },
+      {
+        "source": "NeutralStation$3",
+        "target": "NeutralStation$2",
+        "field": "$show_flights"
+      },
+      {
+        "source": "NeutralStation$4",
+        "target": "NeutralStation$3",
+        "field": "$show_flights"
       }
     ]
   },
@@ -784,6 +859,21 @@
         "source": "BlueStation$1",
         "target": "GreenStation$0",
         "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "BlueStation$1",
+        "field": "$show_flights"
+      },
+      {
+        "source": "BlueStation$0",
+        "target": "NeutralStation$1",
+        "field": "$show_flights"
+      },
+      {
+        "source": "BlueStation$1",
+        "target": "BlueStation$0",
+        "field": "$show_flights"
       }
     ]
   },
@@ -888,6 +978,26 @@
         "source": "BlueStation$0",
         "target": "GreenStation$0",
         "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "BlueStation$0",
+        "field": "$show_flights"
+      },
+      {
+        "source": "GreenStation$0",
+        "target": "GreenStation$1",
+        "field": "$show_flights"
+      },
+      {
+        "source": "GreenStation$1",
+        "target": "NeutralStation$1",
+        "field": "$show_flights"
+      },
+      {
+        "source": "BlueStation$0",
+        "target": "GreenStation$0",
+        "field": "$show_flights"
       }
     ]
   },
@@ -992,6 +1102,16 @@
         "source": "GreenStation$2",
         "target": "NeutralStation$1",
         "field": "nextOrbit"
+      },
+      {
+        "source": "NeutralStation$0",
+        "target": "GreenStation$2",
+        "field": "$show_flights"
+      },
+      {
+        "source": "GreenStation$2",
+        "target": "NeutralStation$1",
+        "field": "$show_flights"
       }
     ]
   }

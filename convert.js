@@ -35,6 +35,7 @@ function alloyToGraph (alloy) {
 
     const fields = instance.field;
     const sigs = instance.sig;
+    const skolem = instance.skolem;
 
     const nodes = [];
     const edges = [];
@@ -91,6 +92,24 @@ function alloyToGraph (alloy) {
             });
         }
     });
+
+    skolem.forEach(skolem => {
+        const label = skolem.$.label;
+        const tuples = skolem.tuple;
+        if (tuples) {
+            tuples.forEach(tuple => {
+                const atoms = tuple.atom.map(atom => {
+                    return atom.$.label;
+                });
+                edges.push({
+                    source: atoms[0],
+                    target: atoms[1],
+                    field: label
+                });
+            })
+        }
+    });
+
     return {
         nodes,
         edges: edges
